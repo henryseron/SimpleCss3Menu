@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>Simple CSS3 Menu</name>
+    <author>Shaking Web</author>
+    <creationDate>January 2015</creationDate>
+    <copyright>Copyright (C) 2015 Shaking Web. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>contacto@shakingweb.com</authorEmail>
+    <authorUrl>http://www.shakingweb.com</authorUrl>
+    <version>1.1.0</version>
+    <description>MOD_SIMPLE_CSS3_MENU_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_simplecss3menu">mod_simplecss3menu.php</filename>
+	<folder>tmpl</folder>
+        <folder>assets</folder>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+        <filename>CHANGELOG.txt</filename>
+        <filename>mod_simplecss3menu.xml</filename>
+    </files>
+    <languages folder="languages">
+	<language tag="en-EN">en-EN.mod_simplecss3menu.ini</language>
+        <language tag="en-GB">en-GB.mod_simplecss3menu.ini</language>
+        <language tag="es-ES">es-ES.mod_simplecss3menu.ini</language>
+    </languages>
+	
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="menutype" type="menu" label="MOD_SIMPLE_CSS3_MENU_FIELD_MENUTYPE" description="MOD_SIMPLE_CSS3_MENU_FIELD_MENUTYPE_DESC" />
+		<field name="startLevel" type="list" default="1" label="MOD_SIMPLE_CSS3_MENU_FIELD_STARTLEVEL" description="MOD_SIMPLE_CSS3_MENU_FIELD_STARTLEVEL_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </field>
+
+		<field name="endLevel" type="list" default="3" label="MOD_SIMPLE_CSS3_MENU_FIELD_ENDLEVEL" description="MOD_SIMPLE_CSS3_MENU_FIELD_ENDLEVEL_DESC">
+                    <!--<option value="0">MOD_SIMPLE_CSS3_MENU_ALL</option>-->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+<!--                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>-->
+                </field>
+
+		<field name="showAllChildren" type="radio" default="1" label="MOD_SIMPLE_CSS3_MENU_FIELD_ALLCHILDREN" description="MOD_SIMPLE_CSS3_MENU_FIELD_ALLCHILDREN_DESC">
+                    <option value="0">MOD_SIMPLE_CSS3_MENU_NO</option>
+                    <option value="1">MOD_SIMPLE_CSS3_MENU_YES</option>
+		</field>
+            </fieldset>
+
+            <fieldset name="advanced">
+<!--                <field name="style" type="radio" default="horizontal" label="MOD_SIMPLE_CSS3_MENU_STYLE" description="MOD_SIMPLE_CSS3_MENU_STYLE_DESC">
+                    <option value="horizontal">MOD_SIMPLE_CSS3_MENU_STYLE_H</option>
+                    <option value="vertical">MOD_SIMPLE_CSS3_MENU_STYLE_V</option>
+                </field>-->
+                <field name="menu_item_width" type="text" default="240" label="MOD_SIMPLE_CSS3_MENU_ITEM_WIDTH" description="MOD_SIMPLE_CSS3_MENU_ITEM_WIDTH_DESC" />
+                <field name="color_menu_text" type="text" default="ffffff" label="MOD_SIMPLE_CSS3_MENU_COLOR_LETTER" description="MOD_SIMPLE_CSS3_MENU_COLOR_LETTER_DESC" />
+                <field name="color_menu_over" type="text" default="525253" label="MOD_SIMPLE_CSS3_MENU_COLOR_HOVER" description="MOD_SIMPLE_CSS3_MENU_COLOR_HOVER_DESC" />
+                <field name="color_menu_over_text" type="text" default="b06e22" label="MOD_SIMPLE_CSS3_MENU_COLOR_HOVER_TEXT" description="MOD_SIMPLE_CSS3_MENU_COLOR_HOVER_TEXT_DESC" />
+		
+                <field name="color_submenu" type="text" default="555555" label="MOD_SIMPLE_CSS3_MENU_COLOR_SUBMENU" description="MOD_SIMPLE_CSS3_MENU_COLOR_SUBMENU_DESC" />
+                
+                <field name="id_menu_subtitle" type="text" default="" label="MOD_SIMPLE_CSS3_MENU_ID_MENU_SUBTITLE" description="MOD_SIMPLE_CSS3_MENU_ID_MENU_SUBTITLE_DESC" />
+                <field name="menu_subtitle" type="text" default="" label="MOD_SIMPLE_CSS3_MENU_MENU_SUBTITLE" description="MOD_SIMPLE_CSS3_MENU_MENU_SUBTITLE_DESC" />
+                <field name="color_menu_subtitle" type="text" default="ffffff" label="MOD_SIMPLE_CSS3_MENU_COLOR_MENU_SUBTITLE" description="MOD_SIMPLE_CSS3_MENU_COLOR_MENU_SUBTITLE_DESC" />
+                <field name="color_menu_subtitle_over" type="text" default="525253" label="MOD_SIMPLE_CSS3_MENU_COLOR_MENU_SUBTITLE_OVER" description="MOD_SIMPLE_CSS3_MENU_COLOR_MENU_SUBTITLE_OVER_DESC" />
+                
+                <field name="window_open" type="hidden" label="MOD_SIMPLE_CSS3_MENU_FIELD_TARGET" description="MOD_SIMPLE_CSS3_MENU_FIELD_TARGET_DESC" />
+		<field name="layout" type="hidden" label="JFIELD_ALT_LAYOUT" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field name="moduleclass_sfx" type="hidden" label="COM_MODULES_FIELD_MODULECLASS_SFX" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+		<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		<field name="cachemode" type="hidden" default="itemid">
+                    <option value="itemid"></option>
+		</field>
+            </fieldset>
+	</fields>
+    </config>
+</extension>

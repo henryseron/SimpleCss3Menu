@@ -1,0 +1,91 @@
+ul#mod_simplecss3_menu_horizontal {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+/*    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+}
+ul#mod_simplecss3_menu_horizontal li {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 20px 20px;
+    background: none !important;
+    cursor: pointer;
+    margin: 0px !important;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+ul#mod_simplecss3_menu_horizontal li:hover {
+    z-index: 9999;
+}
+ul#mod_simplecss3_menu_horizontal li ul {
+    padding: 0;
+    position: absolute;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -transition: opacity 0.5s;
+}
+ul#mod_simplecss3_menu_horizontal li ul li { 
+    display: block; 
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+    z-index: 9999;
+}
+ul#mod_simplecss3_menu_horizontal li ul li:hover { background: #666; }
+ul#mod_simplecss3_menu_horizontal li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul#mod_simplecss3_menu_horizontal li ul li ul{
+    padding: 0;
+    position: absolute;
+    left: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -transition: opacity 0.5s;
+}
+ul#mod_simplecss3_menu_horizontal li ul li ul li{
+    left: 100%;
+    top: -35px;
+    display: block; 
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+ul#mod_simplecss3_menu_horizontal li ul li ul li:hover{ background: #666; }
+ul#mod_simplecss3_menu_horizontal li ul li:hover ul {
+    display: block !important;
+    opacity: 1;
+    visibility: visible !important;
+}
+
+ul#mod_simplecss3_menu_horizontal li span.mod_simplecss3_menu_subtitle{
+    font-weight: normal !important;
+    opacity: 0.8 !important;
+    font-size: 98% !important;
+}

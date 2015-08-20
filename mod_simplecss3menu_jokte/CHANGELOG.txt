@@ -1,0 +1,19 @@
+Español.
+
+Versión 1.1.0
+- Se añade subtítulos a los ítems de menú
+- El usuario puede elegir el color de las letras del subtítulo
+
+Versión 1.0.0
+- Menú drop down horizontal con 3 niveles de profundidad
+- El usuario puede elegir: ancho del ítem, colores de las letras del menú
+
+English
+
+Version 1.1.0
+- Subtitles for item menu are added
+- User can choose the color of the letters
+
+Version 1.0.0
+- Horizontal drop down menu with 3 three levels
+- User can choose: menu item width, color letters menu
